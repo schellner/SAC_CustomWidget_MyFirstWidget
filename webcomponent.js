@@ -6,7 +6,7 @@
       </style>
     `;
 
-    customElements.define('com-sap-sample-myFirstWidget1', class MyFirstWidget1 extends HTMLElement {
+    customElements.define('com-sap-sample-myfirstwidget1', class MyFirstWidget1 extends HTMLElement {
 
 
 		constructor() {
