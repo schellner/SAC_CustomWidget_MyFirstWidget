@@ -2,7 +2,7 @@
 	"name": "Hello World Step 1",
 	"description": "The first step in creating a minimal KPI tile",
 	"eula": "",
-	"vendor": "Who created me?",
+	"vendor": "SAP",
 	"license": "",
 	"id": "com.sap.sample.myFirstWidget1",
 	"newInstancePrefix": "MyFirstWidget1",
@@ -12,7 +12,7 @@
 		{
 			"kind": "main",
 			"tag": "com-sap-sample-myFirstWidget1",
-            "url": "https://davidhstocker.github.io/SAC_CustomWidget_HelloWorld_1/webcomponent.js",
+            "url": "https://raw.githubusercontent.com/schellner/SAC_CustomWidget_MyFirstWidget/master/webcomponent.js",
             "integrity": "",
             "ignoreIntegrity" : true
         }
