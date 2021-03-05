@@ -12,7 +12,7 @@
 		{
 			"kind": "main",
 			"tag": "com-sap-sample-myfirstwidget1",
-            "url": "https://raw.githubusercontent.com/schellner/SAC_CustomWidget_MyFirstWidget/master/webcomponent.js",
+            "url": "https://schellner.github.io/SAC_CustomWidget_MyFirstWidget/webcomponent.js",
             "integrity": "",
             "ignoreIntegrity" : true
         }
