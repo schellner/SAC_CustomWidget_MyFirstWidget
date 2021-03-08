@@ -1,16 +1,18 @@
 (function()  {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
-        <h1> Hello World </h1>
     `;
 
-    customElements.define('com-sap-sample-myfirstwidget1', class MyFirstWidget1 extends HTMLElement {
+    customElements.define('com-sap-sample-myfirstwidget2', class MyFirstWidget1 extends HTMLElement {
 
 
 		constructor() {
 			super(); 
 			let shadowRoot = this.attachShadow({mode: "open"});
 			shadowRoot.appendChild(tmpl.content.cloneNode(true));
+            this._tagContainer;
+            this._tagType = "h1";
+            this._tagText = "Hello World";
 		}
 
 
@@ -50,7 +52,18 @@
         }
         */
 
-        redraw(){
+       redraw(){
+            if (this._tagText != null){
+                if (this._tagContainer){
+                    this._tagContainer.parentNode.removeChild(this._tagContainer);
+                }
+        
+                var shadow = window.getSelection(this._shadowRoot);
+                this._tagContainer = document.createElement(this._tagType);
+                var theText = document.createTextNode(this._tagText);    
+                this._tagContainer.appendChild(theText); 
+                this._shadowRoot.appendChild(this._tagContainer);
+            }
         }
     
     
