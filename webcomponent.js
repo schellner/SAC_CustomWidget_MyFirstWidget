@@ -3,7 +3,7 @@
     tmpl.innerHTML = `
     `;
 
-    customElements.define('com-sap-sample-myfirstwidget2', class MyFirstWidget1 extends HTMLElement {
+    customElements.define('com-sap-sample-myfirstwidget3', class MyFirstWidget1 extends HTMLElement {
 
 
 		constructor() {
@@ -53,9 +53,18 @@
         }
         */
 
+        //Getters and Setters
+        get widgetText() {
+            return this._tagType;
+        }
+
+        set widgetText(value) {
+            this._tagText = value;
+        }
+
        redraw(){
-            if (this._tagText != null){  
-                if (this._tagContainer){
+            if (this._tagText != null){     // only redraw if there is at least one tag to be drawn 
+                if (this._tagContainer){    // remove the tagContainer if it exists
                     this._tagContainer.parentNode.removeChild(this._tagContainer);
                 }
         
