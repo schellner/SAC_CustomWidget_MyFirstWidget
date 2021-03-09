@@ -43,5 +43,5 @@
             return this._shadowRoot.getElementById("aps_text").value;
         }
 	}
-customElements.define("com-sap-sample-myfirstwidget3", HelloWorldAps);
+customElements.define("com-sap-sample-myfirstwidget3-aps", HelloWorldAps);
 })();
