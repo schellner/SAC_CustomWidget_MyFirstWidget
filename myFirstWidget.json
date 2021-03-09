@@ -1,6 +1,6 @@
 {
 	"name": "Hello World Step 3",
-	"description": "The first step in creating a minimal KPI tile",
+	"description": "The first step in creating a minimalistic KPI tile. Now with properties.",
 	"eula": "",
 	"vendor": "SAP",
 	"license": "",
@@ -18,7 +18,7 @@
         },
 		{
 			"kind": "styling",
-			"tag": "com-sap-sample-helloworld3-aps",
+			"tag": "com-sap-sample-myfirstwidget3-aps",
 			"url": "https://schellner.github.io/SAC_CustomWidget_MyFirstWidget/aps_webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity" : true
