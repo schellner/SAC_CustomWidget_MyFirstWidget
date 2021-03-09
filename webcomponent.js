@@ -9,7 +9,7 @@
 		constructor() {
 			super(); 
 			this._shadowRoot = this.attachShadow({mode: "open"});
-			shadowRoot.appendChild(tmpl.content.cloneNode(true));
+			this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
             this._firstConnection = false;
             this._tagContainer;
             this._tagType = "h1";
@@ -54,7 +54,7 @@
         */
 
        redraw(){
-            if (this._tagText != null){
+            if (this._tagText != null){  
                 if (this._tagContainer){
                     this._tagContainer.parentNode.removeChild(this._tagContainer);
                 }
